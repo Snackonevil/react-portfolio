@@ -1,8 +1,11 @@
+import { useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 export default function About() {
+    const location = useLocation();
     return (
         <>
+            {location.pathname === "/about" ? <Navbar navbarOpacity={1} /> : ""}
             <section id="about">
                 <div className="container">
                     <p>

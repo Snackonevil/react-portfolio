@@ -1,5 +1,15 @@
-import React from "react";
+import { useLocation } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 export default function Contact() {
-    return <div>Contact</div>;
+    const location = useLocation();
+    return (
+        <>
+            {location.pathname === "/contact" ? (
+                <Navbar navbarOpacity={1} />
+            ) : (
+                ""
+            )}
+        </>
+    );
 }
