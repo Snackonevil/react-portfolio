@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-export default function Header() {
+export default function Navbar() {
     const [navbarOpacity, setNavbarOpacity] = useState(0);
+
     const handleScroll = () => {
         let opacity = window.pageYOffset / 800;
         setNavbarOpacity(opacity);
