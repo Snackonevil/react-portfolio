@@ -17,7 +17,11 @@ export default function Home() {
 
     return (
         <>
-            <Navbar navbarOpacity={navbarOpacity} />
+            {navbarOpacity === 0 ? (
+                ""
+            ) : (
+                <Navbar navbarOpacity={navbarOpacity} />
+            )}
             <Showcase />
             <About />
             <Work />
