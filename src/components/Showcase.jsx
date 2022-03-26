@@ -8,14 +8,16 @@ export default function Showcase() {
         visible: {
             opacity: 1,
             transition: {
-                delay: 0.5,
-                delayChildren: 0.3,
-                staggerChildren: 0.2,
+                when: "beforeChildren",
+                delay: 0.3,
+                staggerChildren: 0.08,
             },
         },
     };
     const letterVariant = {
-        hidden: { opacity: 0 },
+        hidden: {
+            opacity: 0,
+        },
         visible: {
             opacity: 1,
         },
@@ -30,7 +32,6 @@ export default function Showcase() {
                             variants={nameVariant}
                             initial="hidden"
                             animate="visible"
-                            // transition={{ duration: 0.4 }}
                         >
                             {nameString.split("").map((char, index) => {
                                 return (
