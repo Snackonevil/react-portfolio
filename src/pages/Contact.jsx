@@ -7,10 +7,12 @@ export default function Contact() {
   return (
     <>
       {location.pathname === '/contact' ? <Navbar navbarOpacity={1} /> : ''}
-      <div className="container">
-        <h1>Contact me</h1>
-        <ContactForm />
-      </div>
+      <section>
+        <div className="container">
+          <h1>Contact me</h1>
+          <ContactForm />
+        </div>
+      </section>
     </>
   );
 }
