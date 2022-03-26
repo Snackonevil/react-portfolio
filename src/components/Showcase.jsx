@@ -44,6 +44,16 @@ export default function Showcase() {
                                 );
                             })}
                         </motion.h1>
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 0.75, duration: 1 }}
+                            style={{
+                                width: `100%`,
+                                height: `3px`,
+                                backgroundColor: `black`,
+                            }}
+                        ></motion.div>
                     </div>
                 </div>
             </div>
