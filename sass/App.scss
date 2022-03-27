@@ -1,0 +1,35 @@
+@import url("https://use.typekit.net/dfa1fsk.css");
+
+$primary-color: #000742;
+$secondary-color: #72978e;
+$cream-color: #edddb7;
+$accent-color: #913e5a;
+$shadow-color: rgba(55, 55, 55, 0.2);
+
+* {
+    // border: 1px solid black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: proxima-nova, sans-serif;
+    // background-color: $cream-color;
+    // color: $primary-color;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+section {
+    padding-top: 5%;
+    height: 100vh;
+}
+
+@import "header";
+@import "showcase";
+@import "about";
+@import "work";

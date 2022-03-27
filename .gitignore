@@ -10,8 +10,6 @@
 
 # production
 /build
-/sass
-design.html
 
 # misc
 .DS_Store

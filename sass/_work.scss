@@ -1,0 +1,12 @@
+.project-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .project {
+        border: 1px black solid;
+        flex: 33% 1 1;
+        height: 300px;
+        background-color: aqua;
+    }
+}
