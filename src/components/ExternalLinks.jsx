@@ -47,7 +47,7 @@ export default function ExternalLinks() {
             <motion.a
               variants={iconVariant}
               alt="resume"
-              href="/ResumeLacson2022.pdf"
+              href="%PUBLIC_URL%/ResumeLacson2022.pdf"
               download
             >
               <FaFile />
