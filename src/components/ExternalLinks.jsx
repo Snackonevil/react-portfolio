@@ -47,7 +47,7 @@ export default function ExternalLinks() {
             <motion.a
               variants={iconVariant}
               alt="resume"
-              href="%PUBLIC_URL%/ResumeLacson2022.pdf"
+              href="/ResumeLacson2022.pdf"
               download
             >
               <FaFile />
@@ -59,13 +59,25 @@ export default function ExternalLinks() {
             >
               <FaEnvelope />
             </motion.a>
-            <motion.a variants={iconVariant} alt="linkedin" href="">
+            <motion.a
+              variants={iconVariant}
+              alt="linkedin"
+              href="https://www.linkedin.com/in/kevin-lacson/"
+            >
               <FaLinkedin />
             </motion.a>
-            <motion.a variants={iconVariant} alt="github" href="">
+            <motion.a
+              variants={iconVariant}
+              alt="github"
+              href="https://github.com/Snackonevil"
+            >
               <FaGithub />
             </motion.a>
-            <motion.a variants={iconVariant} alt="instagram" href="">
+            <motion.a
+              variants={iconVariant}
+              alt="instagram"
+              href="https://www.instagram.com/dev.kev_/"
+            >
               <FaInstagram />
             </motion.a>
           </motion.div>
