@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Showcase from '../components/Showcase';
+import ExternalLinks from '../components/ExternalLinks';
 import About from './About';
 import Work from './Work';
 import Contact from './Contact';
@@ -20,6 +21,7 @@ export default function Home() {
     <>
       {navbarOpacity === 0 ? '' : <Navbar navbarOpacity={navbarOpacity} />}
       <Showcase />
+      <ExternalLinks />
       <About />
       <Work />
       <Contact />

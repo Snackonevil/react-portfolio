@@ -24,7 +24,7 @@ export default function Showcase() {
   };
 
   return (
-    <section>
+    <section style={{ marginBottom: `200px` }}>
       <div className="container">
         <div className="showcase">
           <div className="name">
