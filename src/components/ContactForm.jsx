@@ -6,6 +6,8 @@ export default function ContactForm() {
 
   return (
     <form>
+      <h1>{senderName}</h1>
+      <h1>{messageBody}</h1>
       <input
         type="text"
         name="name"
