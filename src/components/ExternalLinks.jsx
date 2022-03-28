@@ -42,6 +42,7 @@ export default function ExternalLinks() {
             variants={linksVariant}
             initial="hidden"
             animate="visible"
+            exit="hidden"
             className="links"
           >
             <motion.a
