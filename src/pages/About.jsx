@@ -9,11 +9,12 @@ export default function About() {
       <section id="about">
         <div className="container">
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
-            consequuntur quod voluptate distinctio et amet mollitia sequi eius,
-            dolorum cumque harum. Nam, blanditiis quisquam aut et, magnam earum
-            quia distinctio repudiandae eos quod, adipisci tempore dicta at
-            officia soluta ut!
+            Software Developer with a background in healthcare chaplaincy and
+            academic research in philosophy and religion. Devoted to learning,
+            driven by creativity, and dedicated to compassion. Focused on
+            analytical precision and productive communication within
+            interpersonal relationships. Known to employers and colleagues for
+            collaborative focus and humor.
           </p>
         </div>
       </section>
