@@ -55,7 +55,7 @@ export default function Work() {
                                         className="project"
                                     >
                                         <Link
-                                            to={`projects/${project.id}`}
+                                            to={`/projects/${project.id}`}
                                             element={<ProjectPage />}
                                         >
                                             <Project project={project} />
