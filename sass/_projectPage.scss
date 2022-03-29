@@ -1,13 +1,22 @@
 #project-page {
   height: 100vh;
   display: flex;
+  align-items: center;
 
   .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 50%;
+
     img {
       height: 400px;
       width: 400px;
       border-radius: 10px;
     }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -45,3 +45,15 @@ section {
     color: black;
   }
 }
+
+.back-btn {
+  font-size: 30pt;
+  position: absolute;
+  background: transparent;
+  top: 30px;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

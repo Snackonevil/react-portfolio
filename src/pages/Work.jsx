@@ -21,7 +21,7 @@ export default function Work() {
         when: 'beforeChildren',
         delay: 0.2,
         staggerChildren: 0.1,
-        duration: 0.5,
+        duration: 0.2,
       },
     },
   };
@@ -39,7 +39,7 @@ export default function Work() {
     <>
       {location.pathname === '/work' ? <Navbar navbarOpacity={1} /> : ''}{' '}
       <section ref={ref} id="work">
-        <div className="container" style={{ padding: '100px' }}>
+        <div className="container" style={{ padding: '0 100px' }}>
           <AnimatePresence>
             {inView ? (
               <motion.div
