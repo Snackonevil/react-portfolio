@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.9caa8f6a.css",
-    "main.js": "/react-portfolio/static/js/main.e1cb81f0.js",
+    "main.css": "/react-portfolio/static/css/main.ca7cee4d.css",
+    "main.js": "/react-portfolio/static/js/main.b3185364.js",
+    "static/media/meteo-melodies.png": "/react-portfolio/static/media/meteo-melodies.f46edfb585595fb55219.png",
+    "static/media/elder-raven-logo.png": "/react-portfolio/static/media/elder-raven-logo.4109c50ca7c7bb312f26.png",
+    "static/media/weather-dash.png": "/react-portfolio/static/media/weather-dash.470b702203d72cd6af8e.png",
+    "static/media/modular-screenshot.png": "/react-portfolio/static/media/modular-screenshot.7a6e1942f224efd334ad.png",
     "index.html": "/react-portfolio/index.html",
-    "main.9caa8f6a.css.map": "/react-portfolio/static/css/main.9caa8f6a.css.map",
-    "main.e1cb81f0.js.map": "/react-portfolio/static/js/main.e1cb81f0.js.map"
+    "main.ca7cee4d.css.map": "/react-portfolio/static/css/main.ca7cee4d.css.map",
+    "main.b3185364.js.map": "/react-portfolio/static/js/main.b3185364.js.map"
   },
   "entrypoints": [
-    "static/css/main.9caa8f6a.css",
-    "static/js/main.e1cb81f0.js"
+    "static/css/main.ca7cee4d.css",
+    "static/js/main.b3185364.js"
   ]
 }
