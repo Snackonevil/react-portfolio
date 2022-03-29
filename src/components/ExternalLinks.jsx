@@ -18,8 +18,6 @@ export default function ExternalLinks() {
       y: -50,
       opacity: 1,
       transition: {
-        when: 'beforeChildren',
-        delay: 0,
         staggerChildren: 0.08,
       },
     },
@@ -47,7 +45,7 @@ export default function ExternalLinks() {
           >
             <motion.a
               variants={iconVariant}
-              alt="resume"
+              title="resume"
               href="/ResumeLacson2022.pdf"
               download
             >
@@ -55,28 +53,28 @@ export default function ExternalLinks() {
             </motion.a>
             <motion.a
               variants={iconVariant}
-              alt="email"
+              title="email"
               href="mailto:lacsonky@gmail.com"
             >
               <FaEnvelope />
             </motion.a>
             <motion.a
               variants={iconVariant}
-              alt="linkedin"
+              title="linkedin"
               href="https://www.linkedin.com/in/kevin-lacson/"
             >
               <FaLinkedin />
             </motion.a>
             <motion.a
               variants={iconVariant}
-              alt="github"
+              title="github"
               href="https://github.com/Snackonevil"
             >
               <FaGithub />
             </motion.a>
             <motion.a
               variants={iconVariant}
-              alt="instagram"
+              title="instagram"
               href="https://www.instagram.com/dev.kev_/"
             >
               <FaInstagram />
