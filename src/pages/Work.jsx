@@ -3,58 +3,70 @@ import { Link, useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Project from '../components/Project';
 import ProjectPage from './ProjectPage';
+import projectData from '../projectData/index';
+import { useInView } from 'react-intersection-observer';
+import { motion, AnimatePresence } from 'framer-motion';
 
-export const projectData = [
-  {
-    id: 1,
-    name: 'MeteoMelodies',
-    description: 'This is a description of MeteoMelodies',
-    appLink: '',
-    codeLink: '',
-    image: '',
-  },
-  {
-    id: 2,
-    name: 'Modular',
-    description: 'This is a description of Modular',
-    appLink: '',
-    codeLink: '',
-    image: '',
-  },
-  {
-    id: 3,
-    name: 'Weather Dashboard',
-    description: 'This is a description of Weather Dashboard',
-    appLink: '',
-    codeLink: '',
-    image: '',
-  },
-  {
-    id: 4,
-    name: 'Elder Raven',
-    description: '',
-    appLink: '',
-    codeLink: '',
-    image: '',
-  },
-];
 export default function Work() {
   const location = useLocation();
-
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
+  const listVariant = {
+    hidden: { y: 150, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        when: 'beforeChildren',
+        delay: 0.2,
+        staggerChildren: 0.1,
+        duration: 0.5,
+      },
+    },
+  };
+  const projectVariant = {
+    hidden: {
+      y: 150,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
     <>
       {location.pathname === '/work' ? <Navbar navbarOpacity={1} /> : ''}{' '}
-      <section id="work">
-        <div className="container">
-          <div className="project-list">
-            {projectData.map(project => (
-              <div key={project.id} className="project">
-                <Link to={`projects/${project.id}`} element={<ProjectPage />}>
-                  <Project project={project} />
-                </Link>
-              </div>
-            ))}
-          </div>
+      <section ref={ref} id="work">
+        <div className="container" style={{ padding: '100px' }}>
+          <AnimatePresence>
+            {inView ? (
+              <motion.div
+                variants={listVariant}
+                initial="hidden"
+                animate="visible"
+                className="project-list"
+              >
+                {projectData.map(project => (
+                  <motion.div
+                    variants={projectVariant}
+                    key={project.id}
+                    className="project"
+                  >
+                    <Link
+                      to={`projects/${project.id}`}
+                      element={<ProjectPage />}
+                    >
+                      <Project project={project} />
+                    </Link>
+                  </motion.div>
+                ))}
+              </motion.div>
+            ) : (
+              ''
+            )}
+          </AnimatePresence>
         </div>
       </section>
     </>
