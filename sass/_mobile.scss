@@ -1,0 +1,50 @@
+@media screen and (max-width: 600px) {
+    body {
+        .container {
+            padding: 10px;
+        }
+        .showcase {
+            padding-top: 50%;
+            .name {
+                h1 {
+                    font-size: 5rem;
+                    line-height: 5rem;
+                    text-align: center;
+                    // letter-spacing: 1rem;
+                }
+            }
+        }
+    }
+    .project-list {
+        display: flex;
+        width: 100%;
+        padding: 0 10px;
+
+        .project {
+            flex: 100% 0 1;
+        }
+    }
+
+    #project-page {
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            padding-bottom: 20px;
+        }
+        .card {
+            padding-bottom: 30px;
+        }
+    }
+    .back-btn {
+        font-size: 30pt;
+        position: absolute;
+        background: transparent;
+        // top: 30px;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
