@@ -7,16 +7,3 @@ body {
         }
     }
 }
-
-@media screen and (max-width: 600px) {
-    body {
-        #about {
-            height: 100%;
-
-            p {
-                font-size: 2rem;
-                padding: 0 10px;
-            }
-        }
-    }
-}
