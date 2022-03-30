@@ -15,6 +15,7 @@ export default function Home() {
         let opacity = window.pageYOffset / 800;
         setNavbarOpacity(opacity);
     };
+
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
     }, []);
@@ -26,7 +27,6 @@ export default function Home() {
             ) : (
                 ""
             )}
-
             <Showcase />
             <ExternalLinks />
             <About />
