@@ -1,4 +1,4 @@
-# {PROJECT TITLE}
+# React-Portfolio
 
 ![badge](https://img.shields.io/badge/license-MIT-blue)  
 by Kevin Lacson  
