@@ -40,7 +40,7 @@ const projectData = [
     {
         id: 5,
         name: "Tripiter",
-        description: "This is a description of Elder Raven",
+        description: "This is a description of Tripiter",
         appLink: "https://tripiter.herokuapp.com/",
         codeLink: "https://github.com/Snackonevil/tripiter",
         image: tripiterLogo,
